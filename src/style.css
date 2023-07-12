@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+	* {
+		@apply antialiased
+	}
+
+    h1 {
+        @apply text-secondary text-2xl mb-md font-medium uppercase
+    }
+
+    h3 {
+        @apply text-secondary text-[32px] leading-[40px] mb-xs font-normal text-center
+    }
+
+    .button {
+    	@apply bg-secondary text-white flex items-center rounded-full p-[6px] pl-[12px]
+    	after:content-[''] after:block after:bg-arrow after:w-[28px] after:h-[28px] after:bg-contain after:ml-[10px]
+    }
+
+	.button.reverse {
+    	@apply pl-[6px] pr-[18px]
+    	after:order-[-1] after:ml-0 after:mr-[10px] after:rotate-180
+	}
+
+	.button-alt {
+		@apply bg-secondary text-white text-[20px] inline-flex items-center rounded-full py-[4px] px-[24px]
+	}
+
+    .arrow {
+    	@apply w-[40px] h-[40px] rounded-full bg-chevron bg-no-repeat bg-center bg-secondary cursor-pointer;
+    	flex: 0 0 40px;
+    }
+
+    .result {
+    	@apply flex mb-[8px]
+    }
+
+    .result-label {
+    	@apply flex-1 bg-white rounded-l-full px-[24px] py-[8px]
+    }
+
+    .result-cost {
+    	@apply w-[133px] bg-secondary text-white text-center rounded-r-full px-[20px] py-[8px]
+    }
+
+    .result.total .result-label {
+    	@apply bg-primary text-white
+    }
+
+    .result.total .result-cost {
+    	@apply bg-white text-primary
+    }
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('./assets/fonts/Inter-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter'; 
+	src: url('./assets/fonts/Inter-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('./assets/fonts/Inter-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}

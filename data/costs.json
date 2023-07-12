@@ -1,0 +1,67 @@
+{
+  "costs": [
+    {
+      "name": "Identify requirements",
+      "id": 1,
+      "key": "identify_requirements",
+      "cost": 6,
+      "active": false
+    },
+    {
+      "name": "Request a quotation",
+      "id": 2,
+      "key": "request_quotation",
+      "cost": 3,
+      "active": false
+    },
+    {
+      "name": "Find products",
+      "id": 3,
+      "key": "find_products",
+      "cost": 16,
+      "active": false
+    },
+    {
+      "name": "Raise an order",
+      "id": 4,
+      "key": "raise_order",
+      "cost": 6,
+      "active": false
+    },
+    {
+      "name": "Authorise sale",
+      "id": 5,
+      "key": "authorise_sale",
+      "cost": 21.55,
+      "active": false
+    },
+    {
+      "name": "Pay provider",
+      "id": 6,
+      "key": "pay_provider",
+      "cost": 13,
+      "active": false
+    },
+    {
+      "name": "Deliver product",
+      "id": 7,
+      "key": "deliver_product",
+      "cost": 4.3,
+      "active": false
+    },
+    {
+      "name": "Invoice check",
+      "id": 8,
+      "key": "invoice_check",
+      "cost": 6,
+      "active": false
+    },
+    {
+      "name": "Place order",
+      "id": 9,
+      "key": "place_order",
+      "cost": 6.5,
+      "active": false
+    }
+  ]
+}
